@@ -1,2 +1,2 @@
 # AlinaKovalenko
-Persoal website
+Personal website
