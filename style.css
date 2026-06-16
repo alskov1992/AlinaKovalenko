@@ -158,7 +158,7 @@ h3 { font-size: 1.25rem; }
 
 .hero-card {
   position: relative;
-  min-height: 700px;
+  min-height: 680px;
   border-radius: 34px;
   background: linear-gradient(145deg, #101A2B, #172238);
   border: 1px solid var(--line);
@@ -168,7 +168,7 @@ h3 { font-size: 1.25rem; }
 
 .portrait-placeholder {
   position: absolute;
-  inset: 45px 45px 110px;
+  inset: 35px 35px 140px;
   border-radius: 28px;
   background: linear-gradient(135deg, #18253A, #0F1726);
   display: flex;
@@ -178,7 +178,17 @@ h3 { font-size: 1.25rem; }
   font-size: 2rem;
   font-weight: 800;
 }
+.portrait-placeholder {
+  overflow: hidden;
+}
 
+.portrait-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 8%;
+  border-radius: 28px;
+}
 .ice-map {
   position: absolute;
   left: 0; right: 0; bottom: 0;
