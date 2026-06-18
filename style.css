@@ -396,3 +396,41 @@ input:focus, textarea:focus {
   .cards.four, .portfolio-grid { grid-template-columns: 1fr; }
   .stats { flex-direction: column; gap: 12px; }
 }
+.hero-partners {
+  margin-top: 32px;
+}
+
+.hero-partners p {
+  color: #8E9BAA;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.partner-logos img {
+  height: 34px;
+  width: auto;
+
+  opacity: 0.7;
+
+  filter:
+    grayscale(100%)
+    brightness(0)
+    invert(1);
+
+  transition: all .3s ease;
+}
+
+.partner-logos img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
