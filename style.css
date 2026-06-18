@@ -397,17 +397,17 @@ input:focus, textarea:focus {
   .stats { flex-direction: column; gap: 12px; }
 }
 .hero-partners {
-  margin-top: 34px;
-  max-width: 720px;
+  margin-top: 40px;
+  max-width: 900px;
 }
 
 .hero-partners p {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   color: #8E9BAA;
   font-size: .78rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: .14em;
+  letter-spacing: .16em;
 }
 
 .partner-logos {
@@ -418,14 +418,20 @@ input:focus, textarea:focus {
 }
 
 .partner-logos img {
-  max-height: 34px;
-  max-width: 150px;
+  width: 180px;
+  height: 78px;
   object-fit: contain;
-  opacity: .8;
+  padding: 14px 18px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 16px;
+  opacity: .92;
   transition: .25s ease;
 }
 
 .partner-logos img:hover {
   opacity: 1;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  border-color: rgba(176,141,87,.55);
+  background: rgba(255,255,255,.055);
 }
