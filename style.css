@@ -506,27 +506,34 @@ input:focus, textarea:focus {
 }
 
 .trusted-logos {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px 80px;
 }
 
 .trusted-logos img {
-  width: 100%;
-  height: 120px;
+  max-width: 180px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  padding: 22px 34px;
-  background: #FFFFFF;
-  border: 1px solid #D7DEE3;
-  border-radius: 18px;
-  box-shadow: 0 14px 36px rgba(14,42,71,.08);
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+
+  transition: all .25s ease;
 }
 
 .trusted-logos img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 46px rgba(14,42,71,.12);
+  transform: scale(1.05);
 }
 
 @media (max-width: 920px) {
